@@ -1,0 +1,226 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CraftDraw</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #EFD1E2;
+    }
+    header {
+      background-color: #000000;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    nav {
+      background-color: #956580;
+      overflow: hidden;
+    }
+    nav a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      display: inline-block;
+      text-align: center;
+    }
+    nav a:hover {
+      background-color: #575757;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 0 20px;
+    }
+    .caja {
+      text-align: center;
+      padding: 20px;
+    }
+    .text2 {
+      margin: 0;
+      font-size: 1.2em;
+      color: black;
+    }
+    .text2 p {
+      margin: 10px 0;
+    }
+    .text2 b {
+      font-size: 1.3em;
+    }
+    .catalogo {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin: 40px 0;
+    }
+    .catalogo-item {
+      width: 220px;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .catalogo-item img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+    .catalogo-item h3 {
+      font-size: 1.3em;
+      color: #333;
+    }
+    .catalogo-item p {
+      font-size: 1em;
+      color: #555;
+    }
+    .catalogo-item button {
+      background-color: black;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1em;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    .catalogo-item button:hover {
+      background-color: #c5c5c5;
+      color: black;
+    }
+    .catalogo-button {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      text-align: center;
+    }
+    .catalogo-button img {
+      width: 220px;
+      height: 220px;
+      border-radius: 8px;
+    }
+    .catalogo-button h1 {
+      font-size: 1.5em;
+      color: #333;
+      margin-top: 10px;
+    }
+    .header-left {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 10px;
+    }
+    .header-left img {
+      height: 60px;
+      width: auto;
+    }
+    .header-left h2 {
+      color: white;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-left">
+      <img src="images/cd.jpeg" alt="Logo CraftDraw"> 
+      <h2>CraftDraw</h2>
+    </div>
+  </header>
+
+  <nav>
+    <a href="craftdrawinicio.html">Inicio</a>
+    <a href="craftdrawproductos.html">Todos Los Productos</a>
+    <a href="sobrenosotros.html">Sobre Nosotros</a>
+    <a href="https://www.tiktok.com/@craft.draw7">TikTok</a>
+    <a href="https://www.instagram.com/nicox_.0/">Instagram</a>
+    <a href="file:///C:/xampp/htdocs/Trabajos/PaginaDC/carrito.html">Carrito</a>
+  </nav>
+
+  <div class="container">
+    <div class="caja">
+      <div class="text2">
+        <p>¡Bienvenido a <b>CraftDraw</b>, donde podrás encontrar las mejores herramientas para fines artísticos y creativos! Contamos con una extensa selección de materiales artísticos, incluyendo herramientas para dibujo, pintura acrílica, pinceles, brochas, ¡y mucho más! Explora esta tienda y empieza a dibujar como siempre soñaste.</p>
+        <p><b>Objetivo</b></p>
+        <p>Captar la atención de personas interesadas en el arte.</p>
+      </div>
+    </div>
+
+    <marquee bgcolor="#890481"><font color="#FFFFFF" size="5" face="a Arbei Berry">¡Obtén un 20% de descuento en todos los artículos!</font></marquee>
+
+    <h2 style="text-align: center;">Lo Más Vendido</h2>
+
+    <div class="catalogo">
+      <div class="catalogo-item">
+        <img src="images/fabriano.jpeg" alt="Cuaderno Fabriano">
+        <h3>Cuaderno Fabriano 22.9x30.5cm</h3>
+         <p class="price"><b>$216</b> </p>
+         <p class="price"><s>$270</s></p>
+        <button onclick="agregarAlCarrito('Cuaderno Fabriano 22.9x30.5cm', 216)">Agregar al carrito</button>
+      </div>
+      <div class="catalogo-item">
+        <img src="images/bdg.jpeg" alt="Block de Dibujo Pinto">
+        <h3>Block de Dibujo Pinto 32x49cm</h3>
+         <p class="price"><b>$156</b></p>
+         <p class="price"><s>$195</s></p>
+        <button onclick="agregarAlCarrito('Block de Dibujo Pinto 32x49cm', 156)">Agregar al carrito</button>
+      </div>
+      <div class="catalogo-item">
+        <img src="images/set.jpeg" alt="Kit de Dibujo">
+        <h3>Kit de Dibujo Profesional</h3>
+         <p class="price"><b>$320</b></p> 
+         <p class="price"><s>$400</s></p>
+        <button onclick="agregarAlCarrito('Kit de Dibujo Profesional', 320)">Agregar al carrito</button>
+      </div>
+      <div class="catalogo-item">
+        <img src="images/crayones.jpeg" alt="Crayones">
+        <h3>Crayones de Oleo-Pastel</h3>
+         <p class="price"><b>$96</b></p>
+         <p class="price"><s>$120</s></p>
+        <button onclick="agregarAlCarrito('Crayones de Oleo-Pastel', 96)">Agregar al carrito</button>
+      </div>
+    </div>
+
+    <h2 style="text-align: center;">Catálogo</h2>
+    <div class="catalogo">
+      <a href="craftdrawdibujo.html" class="catalogo-button">
+        <img src="images/dibujo.jpg" alt="Dibujo">
+        <h1>Dibujo</h1>
+      </a>
+      <a href="craftdrawpintura.html" class="catalogo-button">
+        <img src="images/pintura.jpg" alt="Pintura">
+        <h1>Pintura</h1>
+      </a>
+    </div>
+  </div>
+
+   <script>
+    // Vacía el carrito al cargar la página
+    window.onload = function() {
+        localStorage.removeItem('carrito');
+    };
+
+    function agregarAlCarrito(nombre, precio) {
+        let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+        carrito.push({ nombre, precio });
+        localStorage.setItem('carrito', JSON.stringify(carrito));
+        alert(`${nombre} ha sido agregado al carrito.`);
+    }
+</script>
+
+</body>
+</html>
+</html>
